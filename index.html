@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="At Family Medicine Specialists we strive to meet your individual and unique healthcare needs. Our team is made up of doctors, physician assistants/nurse practitioners, nurses, medical assistants and administrative personnel who work for you. We embrace the Patient-Centered Medical Home model of care.">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/inline-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' /> <!-- mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js' async></script> <!-- mapbox -->
+
+</head>
+
+<body>
+    <div class="min-vh-100 container-fluid mx-auto p-2 bg-white">
+        <!-- Top Nav Area -->
+        <div class="row w-100 mx-auto">
+            <div class="col-12">
+                <!-- .logo -->
+                <div class="container text-center bg-white my-4">
+                    <a id="logo" href="/" class="text-decoration-none" title="Family Medicine Specialists, PC"><img
+                            class="img-fluid mx-auto d-block" src="/wp-content/uploads/2016/09/header-logo.jpg"
+                            alt="Family Medicine Specialist Logo" /></a>
+                </div>
+                <div class="border-top ">
+                    <nav id="menu" class="">
+                        <div class="container-lg">
+                            <ul id="menu"
+                                class=" nav list-group list-group-horizontal-lg border-top-0 justify-content-center">
+                                <li class="nav-item list-group-item border-top-0 border-left-0"><a
+                                        href="/index-new.html" class="text-decoration-none"><span>Home</span></a></li>
+                                <li class="nav-item list-group-item border-top-0">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle bg-beige link-color text-decoration-none"
+                                            href="" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Providers
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a href="/providers/"
+                                                class="dropdown-item text-decoration-none"><span>Providers</span></a>
+                                            <a href="/case-manager/"
+                                                class="dropdown-item text-decoration-none"><span>Care Manager</span></a>
+
+                                        </div> <!-- end dropdown menu cont-->
+                                    </div> <!-- end dropdown-->
+
+                                </li>
+                                <li class="nav-item list-group-item border-top-0 "><a class="text-decoration-none"
+                                        href="/patient-education/"><span>Patient Education</span></a></li>
+                                <li class="nav-item list-group-item border-top-0 "><a class="text-decoration-none"
+                                        href="/category/the-health-hub/"><span>The Health Hub</span></a></li>
+                                <li class="nav-item list-group-item border-top-0 "><a class="text-decoration-none"
+                                        href="/news/"><span>News</span></a></li>
+                                <li class="nav-item list-group-item border-top-0 "><a class="text-decoration-none"
+                                        href="/forms/"><span>Forms</span></a></li>
+                                <li class="nav-item list-group-item border-top-0 border-right-0"><a
+                                        class="text-decoration-none" href="/contact-us/"><span>Contact Us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+                </div>
+            </div> <!-- end header col-->
+        </div> <!-- end row -->
+        <!-- Carousel -->
+        <div class="row w-100 mx-auto vh-25 my-5">
+            <!--carousel row -->
+            <div class="mx-auto">
+                <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active" data-interval="3000">
+                            <img src="https://source.unsplash.com/1366x768/?doctor" class="img-fluid"
+                                alt="We are staying strong during covid-19">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="https://source.unsplash.com/1366x768/?nurse" class="img-fluid" alt="nurse">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="https://source.unsplash.com/1366x768/?receptionist" class="img-fluid"
+                                alt="receptionist">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div> <!-- end col -->
+
+        </div> <!-- end carousel row-->
+        <div class="row w-100 mx-auto bg-white">
+            <header class="container text-center mb-5">
+                <h1>Updates</h1>
+            </header>
+        </div>
+        <!-- daily covid updates-->
+        <div class="row w-100 mx-auto pt-4 bg-beige">
+            <div class="container">
+                <div class="row w-100 mx-auto">
+                    <div class="col-lg-6">
+                        <header class="text-center my-4">
+                            <h2>Covid-19</h2>
+                        </header>
+                        <article class="mt-4">
+                            <figure class="mx-auto my-5 text-center">
+                                <img data-src="/wp-content/uploads/2020/11/covid-19.jpg" class="lazy img-fluid figure-img mx-auto"
+                                    alt="Covid 19 virus">
+                                <figcaption><a href="/daily-covid-updates" class="text-decoration-none" target="_blank"
+                                        rel="noopener">Click Here <span class="alert-text">For Current COVID
+                                            Updates</span></a></h3>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <article class="mt-4">
+                            <header class="text-center">
+                                <h2>Family Medicine Specialists policy on facial masks</h2>
+                            </header>
+                            <section class="my-5">
+                                We at Family Medicine Specialists believe in promoting the health of all persons. At
+                                this time, facial masks and social distancing are the only tools we have against
+                                COVID-19. While there are a lot of things being investigated, there is no treatment, no
+                                cure and no vaccine against this new coronavirus. As such, we are supporting the mask
+                                mandate by the State of Michigan and requiring face masks be worn at all times while
+                                inside our office. As a practice, we will also NOT be writing any letters for patients
+                                stating they do not need to wear a mask.
+                                if you do not want to wear a mask and still need to see or talk to your provider, we do
+                                have telehealth options available.
+                            </section>
+                            <section class="my-5 flu-text">
+                                <header class="text-center mx-auto">
+                                    <h3>Flu Clinics</h3>
+                                </header>
+                                If you have an appointment to come into the office, please bring a mask with you to wear
+                                during your visit. Thank you.
+                                Flu shots have arrived! <a href="tel:+16166473770" class="badge badge-dark">Call to
+                                    schedule an appointment.</a> Flu Clinics are going to be a little different this
+                                year. You must call and schedule an appointment for the day of Flu Clinics. On the day
+                                of flu clinic, arrive at your scheduled time and remain in your car. Thank you in
+                                advance for you patience!
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end daily covid updates -->
+
+
+        <div class="row w-100 mx-auto my-5 py-5 text-center">
+            <header class="container text-center">
+                <h2>Covid 19 Work Letter Information</h2>
+            </header>
+        </div>
+        <div class="row w-100 bg-beige mx-auto pt-4">
+            <div class="container clearfix">
+                <div class="col-lg-6 float-left">
+                    <article class="mt-4">
+                        <header class="text-center">
+                            <h3>Covid 19 Work Letter</h3>
+                        </header>
+                        <section class="my-5">
+                            <p>We are here to take care of you during these turbulent times. By now, you have been
+                                barraged with information on the coronavirus. We will assist patients in triaging
+                                symptoms during this time. In short, though, know that the covid-19 coronavirus is
+                                characterized by a dry cough, fever, shortness of breath and fatigue. Other viral
+                                illness such as the common cold and influenza are characterized by fever, cough, runny
+                                nose, body aches, headache and fatigue. If you come into the office with concerning
+                                symptoms, you may be asked to wait in your car until a room is ready.
+                                While face-to-face visits are more meaningful, in these times the use of technology to
+                                bridge barriers and ensure safety may be the best option. We encourage you to sign up
+                                for our telehealth platform using the following step-by-step process. Now is the time to
+                                sign up as opposed to when urgent care is needed. Your doctors at FMS will be available
+                                to see you on telehealth when you need it. Note that you will need a smartphone for this
+                                application and not a PC or laptop. <strong>We will be billing your insurance company
+                                    for your telehealth visit, if you have any concern please let the provider
+                                    know.</strong>
+                                The step-by-step instructions can be viewed by <a href="/telehealth-signup"
+                                    class="badge badge-dark" title="telehealth signup">clicking here.</a></p>
+
+                            <p>
+                                In this time, please remain calm and use common sense measures. While your children are
+                                home from school do not have grandparents watch them. This illness is potentially deadly
+                                for our elders and more benign for our youth. Please take this point seriously. Social
+                                distancing is scientifically proven to save lives. Please practice this and avoid public
+                                gatherings until it is again safe. Though you may be at low risk please think of the
+                                potential spread to our older population. Wash your hands frequently.
+                                Please be patient with our office as we may be overwhelmed during this pandemic
+                                situation.
+                                Sincerely,
+                                Your friends at Family Medicine Specialists
+                            </p>
+
+                        </section>
+                        <footer>
+                            <p> To get a Covid-19 Work Letter Please Call Us At <a href="tel:+16166473770"
+                                    class="badge badge-dark">(616) 647-3770</a></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-6 mx-auto float-left">
+                    <article class="mt-4">
+                        <header class="text-center my-4">
+                            <h2>Covid-19</h2>
+                        </header>
+                        <figure class="mx-auto my-5 text-center">
+                            <img data-src="/wp-content/uploads/2020/11/social-distance.jpg"
+                                class="lazy img-fluid figure-img mx-auto" alt="Social Distancing 6 feet apart">
+                            <figcaption><a href="/daily-covid-updates" class="text-decoration-none" target="_blank"
+                                    rel="noopener">Click Here <span class="alert-text">For Current COVID
+                                        Updates</span></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto my-5 py-5">
+            <header class="container text-center">
+                <h2>Patient Centered-Medical Healthcare</h2>
+            </header>
+        </div>
+        <div class="row w-100 mx-auto text-center bg-beige">
+            <div class="col mx-auto my-4 text-center">
+                <div class="container">
+                    <article class="mt-4">
+                        <section class="my-5">
+                            <p class="max-characters">
+                                At Family Medicine Specialists we strive to meet your individual and unique healthcare
+                                needs. Our team is made up of doctors, physician assistants/nurse practitioners, nurses,
+                                medical assistants and administrative personnel who work for you.
+                                We embrace the Patient-Centered Medical Home model of care. By this, we see our medical
+                                practice as a place where health needs are met primarily and in a way that patients are
+                                well-known, providing care from different sources and at different levels. Recognizing
+                                that there are times when more specialized health care is needed, we pride ourselves on
+                                working closely with and referring to the best specialty care available.
+                                Here at FMS we value the principals of communication, service and availability as
+                                pillars in the care that we provide. Thank you for letting us provide the primary
+                                medical care for you and your family.
+                                For more on the Patient-Centered Medical Home, click the image below.
+                            </p>
+                        </section>
+                        <footer class="mx-auto text-center">
+                            <a href="#"><img data-src="/images/patient-centered-medical-home.png" border="0" class="lazy"
+                                    alt="patient centered medical icon"
+                                    title="patient centered medical information" /></a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- pumpkin contest -->
+        <div class="row w-100 mx-auto my-5 py-5 bg-white">
+            <section class="container mt-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <figure class="mx-auto text-center">
+                            <figcaption class="mx-auto mb-4 text-center">
+                                <h4 class="pt-4">Pumpkin Contest</h4>
+                            </figcaption>
+                            <img class="lazy figure-img img-fluid h-75 mx-auto img-fig"
+                                data-src="/wp-content/uploads/2020/11/pumpkins.jpeg" alt="pumpkin contest"
+                                title="October Pumpkin Contest"> <br />
+                        </figure>
+                    </div>
+                    <div class="col-lg-6">
+                        <figure class="mx-auto text-center">
+                            <figcaption class="mx-auto mb-4 text-center">
+                                <h4 class="pt-4">Winning Team with 'Finding Nemo'</h4>
+                            </figcaption>
+                            <img class="lazy figure-img img-fluid h-75 mx-auto img-fig"
+                                data-src="/wp-content/uploads/2020/11/finding-nemo.jpeg" alt="pumpkin contest winner"
+                                title="Pumpkin Contest Winner"> <br />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </div> <!-- end pumpkins row -->
+
+        <!-- Staying Strong -->
+        <div class="row w-100 mx-auto bg-beige my-5 py-5">
+
+            <figure class="mx-auto text-center">
+                <img data-src="/wp-content/uploads/2020/04/staying-strong-640x480.png" class="lazy img-fluid mx-auto"
+                    alt="Staying Strong During Covid-19" title="We Are Staying Strong During Covid-19">
+                <figcaption class="my-2">We Are Staying Strong During The Covid-19 Pandemic!</figcaption>
+            </figure>
+
+        </div>
+        <div class="row w-100 mx-auto my-5 py-5 text-center">
+            <header class="container text-center">
+                <h2>Community Resource Agencies</h2>
+            </header>
+        </div>
+        <div class="row w-100 mx-auto pt-4 bg-beige">
+            <div class="container mt-4">
+                <div class="col-lg-6 mx-auto">
+                    <header>
+                        <p>
+                            Search for free or reduced cost services like medical care,
+                            food, job training, and more.
+                        </p>
+                    </header>
+                    <ul class="list-group my-4">
+                        <li class="list-group-item"><a href="https://findhelp.org/" class="text-decoration-none"
+                                title="findhelp.org formally aunt bertha">findhelp.org (formally aunt bertha)</a></li>
+                        <li class="list-group-item"><a href="tel:+211">2-1-1</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row w-100 mx-auto my-5 py-5 text-center">
+            <header class="container text-center">
+                <h2>Patient Portal</h2>
+            </header>
+        </div>
+        <div class="row w-100 mx-auto text-center bg-beige">
+            <section class="container mx-auto text-center">
+                <div class="card text-center my-4 hoverable animate__animated animate__fadeIn">
+                    <div class="card-header">
+                        Family Medicine Specialists Patient Portal
+                    </div>
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Patient Portal</h5> -->
+                        <p class="card-text">Click To Access Our Patient Portal</p>
+                        <a href="https://14507.portal.athenahealth.com/" class="btn btn-primary"><img
+                                data-src="/wp-content/uploads/2014/02/patient-portal-4-300x236.png" class="lazy img-fluid"
+                                alt="click to access patient portal" title="click to access patient portal"></a>
+                    </div>
+                    <div class="card-footer text-muted">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="row w-100 mx-auto align-items-center">
+            <div class="col-sm-3 mx-auto my-5">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Providers</h5>
+                        <div class="container mx-auto text-center">
+                            <a href="/providers" class="btn btn-primary mx-auto"><i
+                                    class="fas fa-user-friends fa-7x"></i></a>
+                            <p class="card-text mt-3">Learn More About Our Providers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mx-auto my-5">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Health Hub</h5>
+                        <div class="container mx-auto text-center">
+                            <a href="/category/the-health-hub/" class="btn btn-primary mx-auto"><i
+                                    class="fas fa-heart fa-7x"></i></a>
+                        </div>
+                        <p class="card-text mt-3">Read Tips On Our Health Hub</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mx-auto my-5">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Our Latest News</h5>
+                        <div class="container mx-auto text-center">
+                            <a href="/news" class="btn btn-primary"><i class="far fa-newspaper fa-7x"></i></a>
+                        </div>
+                        <p class="card-text mt-3">Read All About Our Latest Updates And News</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto desktop-spacer d-flex bg-beige justify-content-center align-items-center">
+            <div class="container">
+                <section class="mx-auto text-center">
+                    <header>
+                        <h4>Proudly Serving The Grand Rapids Michigan Area!</h4>
+                    </header>
+                </section>
+            </div>
+        </div>
+        <div class="row w-100 vh-75 mx-auto bg-white text-center map-container">
+
+            <div id="map"></div>
+            <script defer>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZWxrY2l0eWhhemFyZCIsImEiOiJja2gxeXdmd2IwNGJnMnBwZnQ5MXEzNzFrIn0.3wgDB5OJjQLOZkrrWt1J9g';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+                    center: [-85.6865, 43.014107], // starting position [lng, lat]
+                    zoom: 13 // starting zoom
+                });
+
+                var marker = new mapboxgl.Marker()
+                    .setLngLat([-85.6865, 43.014107])
+                    .addTo(map);
+
+                map.on('load', function () {
+                    map.resize();
+                });
+            </script>
+        </div>
+        <!-- contact us-->
+        <div class="row w-75 mx-auto bg-white text-center my-5 py-5 border-top border-bottom">
+            <div class="col-9-lg mx-auto">
+                <h3>Call us at <a href="tel:+16166473770">(616) 647-3770</a> to schedule a new patient consultation
+                    today.</h3>
+            </div>
+            <div class="col-3-lg mx-auto">
+                <a href="tel:+16166473770" class="btn btn-primary" role="button">CONTACT US</a>
+            </div>
+
+        </div> <!-- end contact us -->
+        <!-- footer section-->
+        <footer>
+            <div class="row w-100 text-center mx-auto mt-5 py-5 footer-light">
+                <div class="row w-100 mx-auto">
+                    <div class="col text-left text-white px-5">
+                        <h3 class="pb-3">Proudly Serving Grand Rapids Michigan!</h3>
+                        <p>At Family Medicine Specialists we strive to meet your individual and unique healthcare needs.
+                            Our team is made up of doctors, physician assistants/nurse practitioners, nurses, medical
+                            assistants and administrative personnel who work for you.</p>
+                        <p>We embrace the Patient-Centered Medical Home model of care. By this, we see our medical
+                            practice as a place where health needs are met primarily and in a way that patients are
+                            well-known, providing care from different sources and at different levels. Recognizing that
+                            there are times when more specialized health care is needed, we pride ourselves on working
+                            closely with and referring to the best specialty care available.</p>
+                        <p> Here at FMS we value the principals of communication, service and availability as pillars in
+                            the care that we provide. Thank you for letting us provide the primary medical care for you
+                            and your family.</p>
+                    </div>
+                    <div class="col pl-5">
+                        <div class="row w-100 mx-auto pb-5">
+                            <div class="d-block footer-lg-contact text-left">
+                                <span class="text-left">
+                                    Service Area:
+                                </span>
+                                <span class="d-block text-white">Grand Rapids Michigan</span>
+                            </div>
+                        </div>
+                        <div class="row w-100 mx-auto pb-5 text-left">
+                            <div class="footer-lg-contact">
+                                <span class="d-block text-left pl-0">
+                                    Contact:
+                                </span>
+                                <div class="row w-100 text-left">
+                                    <div class="col-4"><span class="d-block text-white py-3">
+                                            Phone: </span>
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="d-block text-white py-3"><a href="tel:+16166473770"
+                                                class="btn btn-outline-light btn-block mx-2">(616) 647-3770</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- fax number -->
+                                <div class="row w-100 text-left">
+                                    <div class="col-4"><span class="d-block text-white">
+                                            Fax: </span>
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="d-block text-white">
+                                            <a href="#" class="btn btn-outline-light btn-block mx-2">(616) 647-3776</a>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100 mx-auto 5 p-5 footer-dark">
+                <div class="container w-100 text-white">
+                    Copyright © <span id="year"></span><script async defer>document.getElementById('year').textContent=(new Date().getFullYear())</script> | Website developed & hosted by <a href="https://schrader.co" class="text-danger text-decoration-none" target="blank">Schrader Web Solutions</a>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- end wrapper / container -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"
+        async></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+        async></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
+        async></script>
+        <script src="/assets/js/lazyLoad.js"></script>
+    <script defer>
+        const url = location.pathname;
+        const links = document.querySelectorAll('li.nav-item > a');
+        console.log(url);
+        console.log(links);
+        links.forEach((link) => {
+            if (link.pathname === url) {
+                link.parentElement.classList.toggle('custom-active');
+            }
+        })
+    </script>
+
+</body>
+
+</html>
