@@ -1,0 +1,221 @@
+$flu-color: #800080;
+$footer-light: #333333;
+$footer-dark: #292929;
+
+
+.hoverable:hover {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+transition: 350ms ease-in-out;
+}
+
+.header-min-height {
+  height: calc(50vh - 160px);
+}
+
+.map-container {
+  height: 100vh !important;
+  position: relative;
+
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+/*********************
+**Custom Backgrounds**
+**********************/
+
+.bg-beige {
+  background-color: #f6efd3 !important;
+}
+
+.footer-light {
+  background-color: $footer-light
+}
+
+.footer-dark {
+  background-color: $footer-dark;
+}
+/*********************
+**Custom Link Styles**
+**********************/
+
+.link-color {
+  background-color: #fff !important;
+  border: none !important;
+  color: #664994 !important;
+  padding: 0 !important;
+  transition: 250ms ease-in-out !important;
+}
+
+.link-color:hover,
+.link-color:active,
+.link-color:focus {
+  color: #664971 !important;
+  text-decoration: none !important;
+}
+
+.link-color:focus {
+  box-shadow: initial !important;
+  text-decoration: none !important;
+}
+
+
+
+// li.nav-item:hover {
+//   border-top: 3px solid #7cc1de !important;
+// } 
+
+li.nav-item {
+  position: relative !important;
+}
+
+li.nav-item::before {
+  background-color:  #7cc1de;
+  content: '';
+  display: block;
+  height: 4px;
+  left: 0;
+  margin: 0 !important;
+  opacity: 0;
+  padding: 0 !important;
+  position: absolute;
+  top: -4px;
+  transition: 400ms ease-in-out;
+  width: 100% !important;
+}
+
+li.nav-item:hover::before {
+  opacity: 1 !important;
+}
+
+li.custom-active::before {
+  opacity: 1 !important;
+}
+
+.img-fig {
+  max-height: 375px !important;
+  width: auto !important;
+}
+
+.img-450 {
+  min-height: 450px !important;
+}
+
+.carousel-item > .img-fluid {
+ width: 100%;
+}
+
+
+
+/********************
+**Custom Typography**
+*********************/
+
+section,
+article,
+header,
+footer,
+p,
+span {
+  font-size: 1.1em;
+}
+
+.alert-text {
+  color: red;
+  font-weight: bold;
+}
+
+.flu-text {
+  color: $flu-color;
+  line-height: 1.5;
+  font-weight: bolder;
+}
+
+
+.desktop-spacer {
+  min-height: 10vh;
+}
+
+.light-blue {
+  color: #664971;
+}
+
+.footer-lg-contact {
+  color: #888;
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#carouselContainer {
+  display: none;
+}
+
+.navbar-collapse {
+  transition: 250ms ease-in-out;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 499px) {
+
+  
+
+
+  .desktop-spacer {
+    min-height: 35vh;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+  .desktop-spacer {
+    min-height: 25vh;
+  }
+
+  .max-characters {
+    margin: 2em auto;
+    max-width: 60ch;
+    text-align: left;
+  }
+
+  #carouselContainer {
+    display: block;
+  }
+
+  .carousel-item > .img-fluid {
+    height: 500px;
+    width: 100%;
+   }
+
+
+
+}
+
